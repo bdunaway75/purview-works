@@ -24,7 +24,7 @@
 
                 <div class="container-fluid">
                     <div class="row text-sm-center">
-                        <div class="col-lg-6 mb-sm-5 pb-sm-5 d-flex justify-content-center">
+                        <div class="col-lg-6 mb-sm-3 pb-sm-5 d-flex justify-content-center">
                             <div class="border border-black rounded" style="width: 75%">
                                 Our names are Shayna Lane and Joy Zhang. Our website, “Purview”, includes six places located around campus that
                                 peaked our
@@ -35,31 +35,63 @@
                                 from desserts, food, sports, nature, and more.
                             </div>
                         </div>
-                        <div class="mt-4 col-lg-6 d-flex justify-content-center mb-5 text-center">
-                            <div class="card shadow" style="width: 50%; background-color: rgba(112,118,118,0.48)">
-                                <h3 style="color: unset; -webkit-text-stroke: unset; font-family: unset; background-color: #ffd03e">Survey</h3>
-                                <div class="container-fluid mb-3">
-                                    <div class="row">
-                                        <div class="col-lg-6 col-sm-12 ">
-                                            <input type="text" class="form-control" id="name" placeholder="Name">
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class="col-lg-12 col-auto d-flex justify-content-center mb-4 mt-2">
+                                    <img src="../../web/static/images/purdue.gif" class="img-fluid" style="width: 40%">
+                                </div>
+                                <div class="col-lg-12 d-flex justify-content-center mb-4">
+                                    <div class="card shadow" style="width: 50%; background-color: rgba(112,118,118,0.48)">
+                                        <h3 style="color: unset; -webkit-text-stroke: unset; font-family: unset; background-color: #ffd03e">Survey</h3>
+                                        <div class="container-fluid mb-3">
                                             <div class="row">
-                                                <div class="col-lg-12 col-sm-12 mt-2 mb-2">
-                                                    <input type="text" class="form-control" id="email" placeholder="Email">
+                                                <div class="col-lg-6 col-sm-12 ">
+                                                    <input type="text" class="form-control" id="name" placeholder="Name" required="required">
+                                                    <div class="row">
+                                                        <div class="col-lg-12 col-sm-12 mt-2 mb-2">
+                                                            <input type="text" class="form-control" id="email" placeholder="Email" required="required">
+                                                        </div>
+                                                        <div class="col-lg-12 col-sm-12">
+                                                            <input type="text" class="form-control mb-sm-2" id="subject" placeholder="Subject">
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div class="col-lg-12 col-sm-12">
-                                                    <input type="text" class="form-control mb-sm-2" id="subject" placeholder="Subject">
+                                                <div class="col-lg-6 col-sm-12 mt-2">
+                                                    <textarea type="text" class="form-control" placeholder="Body" required="required"
+                                                      style="height: 100%; resize: none"></textarea>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-6 col-sm-12 mt-2">
-                                            <textarea type="text" class="form-control" placeholder="Body"
-                                                  style="height: 100%; resize: none"></textarea>
-                                        </div>
+                                        <div class="btn btn-secondary rounded-0" type="submit"><i class="fa fa-check-circle"> Submit</i> </div>
                                     </div>
                                 </div>
-                                <div class="btn btn-secondary"><i class="fa fa-check-circle"> Submit</i> </div>
                             </div>
                         </div>
+<%--                        <div class="mt-4 col-lg-6 d-flex justify-content-center mb-5 text-center">--%>
+<%--                            <div class="card shadow" style="width: 50%; background-color: rgba(112,118,118,0.48)">--%>
+<%--                                <h3 style="color: unset; -webkit-text-stroke: unset; font-family: unset; background-color: #ffd03e">Survey</h3>--%>
+<%--                                <div class="container-fluid mb-3">--%>
+<%--                                    <div class="row">--%>
+<%--                                        <div class="col-lg-6 col-sm-12 ">--%>
+<%--                                            <input type="text" class="form-control" id="name" placeholder="Name" required="required">--%>
+<%--                                            <div class="row">--%>
+<%--                                                <div class="col-lg-12 col-sm-12 mt-2 mb-2">--%>
+<%--                                                    <input type="text" class="form-control" id="email" placeholder="Email" required="required">--%>
+<%--                                                </div>--%>
+<%--                                                <div class="col-lg-12 col-sm-12">--%>
+<%--                                                    <input type="text" class="form-control mb-sm-2" id="subject" placeholder="Subject">--%>
+<%--                                                </div>--%>
+<%--                                            </div>--%>
+<%--                                        </div>--%>
+<%--                                        <div class="col-lg-6 col-sm-12 mt-2">--%>
+<%--                                            <textarea type="text" class="form-control" placeholder="Body" required="required"--%>
+<%--                                                  style="height: 100%; resize: none"></textarea>--%>
+<%--                                        </div>--%>
+<%--                                    </div>--%>
+<%--                                </div>--%>
+<%--                                <div class="btn btn-secondary rounded-0" type="submit"><i class="fa fa-check-circle"> Submit</i> </div>--%>
+<%--                            </div>--%>
+<%--                        </div>--%>
                     </div>
                 </div>
             </div>
