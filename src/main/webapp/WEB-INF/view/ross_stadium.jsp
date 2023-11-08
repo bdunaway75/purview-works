@@ -7,17 +7,17 @@
 <t:layout>
     <jsp:body>
         <div class="container mt-3">
-            <div class="row">
-                <div class="col-5">
+            <div class="row d-flex">
+                <div class="col-auto col-lg-6">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb mb-0 mr-2">
                             <li class="breadcrumb-item"><a href="/home">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Ross-Ade Stadium</li>
+                            <li class="breadcrumb-item active" aria-current="page">Harry’s Chocolate Shop</li>
                         </ol>
                     </nav>
                 </div>
-                <div class="col-7 text-danger">
-                    (Example of floated image)
+                <div class="col-auto col-lg-6 text-danger">
+                    (Floated image)
                 </div>
             </div>
             <div class="card shadow" style="overflow: clip !important;">

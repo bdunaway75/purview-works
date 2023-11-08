@@ -14,12 +14,12 @@
             </nav>
         </div>
         <div class="card shadow">
-            <div class="container">
+            <div class="container mt-1">
                 <div class="row m-lg-1 text-center">
                     <div class="col-lg-3 my-auto d-flex">
                         <div class="row">
                             <div class="col">
-                                <div class="img-container mt-sm-1">
+                                <div class="img-container mt-sm-2">
                                     <img src="../../web/static/images/stadium.jpg" class="img-fluid img1">
                                 </div>
                                 <a href="ross_stadium">

@@ -35,7 +35,7 @@
                                 from desserts, food, sports, nature, and more.
                             </div>
                         </div>
-                        <div class="mt-4 col-lg-6 d-flex justify-content-center mb-5">
+                        <div class="mt-4 col-lg-6 d-flex justify-content-center mb-5 text-center">
                             <div class="card shadow" style="width: 50%; background-color: rgba(112,118,118,0.48)">
                                 <h3 style="color: unset; -webkit-text-stroke: unset; font-family: unset; background-color: #ffd03e">Survey</h3>
                                 <div class="container-fluid mb-3">
@@ -51,7 +51,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-6 col-sm-12">
+                                        <div class="col-lg-6 col-sm-12 mt-2">
                                             <textarea type="text" class="form-control" placeholder="Body"
                                                   style="height: 100%; resize: none"></textarea>
                                         </div>
