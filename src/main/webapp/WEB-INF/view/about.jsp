@@ -41,7 +41,7 @@
                                     <img src="../../web/static/images/purdue.gif" class="img-fluid" style="width: 40%">
                                 </div>
                                 <div class="col-lg-12 d-flex justify-content-center mb-4">
-                                    <div class="card shadow" style="width: 50%; background-color: rgba(112,118,118,0.48)">
+                                    <div class="card shadow text-center" style="width: 50%; background-color: rgba(112,118,118,0.48)">
                                         <h3 style="color: unset; -webkit-text-stroke: unset; font-family: unset; background-color: #ffd03e">Survey</h3>
                                         <div class="container-fluid mb-3">
                                             <div class="row">
