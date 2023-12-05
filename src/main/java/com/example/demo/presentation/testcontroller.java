@@ -1,6 +1,8 @@
 package com.example.demo.presentation;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -8,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class testcontroller {
 
     @RequestMapping({"/", "home"})
-    public String test() {
+    public String test(Model model) {
         return "home";
     }
 
@@ -46,6 +48,4 @@ public class testcontroller {
     public String about() {
         return "about";
     }
-
-
 }

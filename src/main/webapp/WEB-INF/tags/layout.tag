@@ -1,5 +1,4 @@
 <%@ taglib uri="jakarta.tags.core" prefix="c" %>
-
 <%@ attribute name="head" fragment="true" required="false" %>
 <%@ attribute name="title" required="false" %>
 <html>
@@ -9,10 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>${not empty title ? title : "PurView"}</title>
     <jsp:invoke fragment="head"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="webjars/bootstrap/5.3.2/js/bootstrap.min.js"></script>
     <link href="webjars/bootstrap/5.3.2/css/bootstrap.min.css"
           rel="stylesheet">
     <link rel="stylesheet" href="../../web/static/css/homecss.css">
     <link href="webjars/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
     <style>
     </style>
 

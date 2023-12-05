@@ -6,6 +6,7 @@
 <%@ taglib tagdir="/WEB-INF/tags" prefix="t" %>
 <t:layout>
     <jsp:body>
+
         <div class="container-fluid mt-3">
             <div class="row">
                 <div class="col-5">
@@ -42,14 +43,16 @@
                                 </div>
                                 <div class="col-lg-12 d-flex justify-content-center mb-4">
                                     <div class="card shadow text-center" style="width: 50%; background-color: rgba(112,118,118,0.48)">
-                                        <h3 style="color: unset; -webkit-text-stroke: unset; font-family: unset; background-color: #ffd03e">Survey</h3>
+                                        <h3 style="color: unset; -webkit-text-stroke: unset; font-family: unset; background-color: #ffd03e">
+                                            Survey</h3>
                                         <div class="container-fluid mb-3">
                                             <div class="row">
                                                 <div class="col-lg-6 col-sm-12 ">
                                                     <input type="text" class="form-control" id="name" placeholder="Name" required="required">
                                                     <div class="row">
                                                         <div class="col-lg-12 col-sm-12 mt-2 mb-2">
-                                                            <input type="text" class="form-control" id="email" placeholder="Email" required="required">
+                                                            <input type="text" class="form-control" id="email" placeholder="Email"
+                                                                   required="required">
                                                         </div>
                                                         <div class="col-lg-12 col-sm-12">
                                                             <input type="text" class="form-control mb-sm-2" id="subject" placeholder="Subject">
@@ -57,45 +60,77 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-6 col-sm-12 mt-2">
-                                                    <textarea type="text" class="form-control" placeholder="Body" required="required"
-                                                      style="height: 100%; resize: none"></textarea>
+                                                    <textarea id="body" type="text" class="form-control" placeholder="Body" required="required"
+                                                              style="height: 100%; resize: none"></textarea>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="btn btn-secondary rounded-0" type="submit"><i class="fa fa-check-circle"> Submit</i> </div>
+                                        <div class="btn btn-secondary rounded-0" onclick="verify()"><i class="fa fa-check-circle"> Submit</i></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-<%--                        <div class="mt-4 col-lg-6 d-flex justify-content-center mb-5 text-center">--%>
-<%--                            <div class="card shadow" style="width: 50%; background-color: rgba(112,118,118,0.48)">--%>
-<%--                                <h3 style="color: unset; -webkit-text-stroke: unset; font-family: unset; background-color: #ffd03e">Survey</h3>--%>
-<%--                                <div class="container-fluid mb-3">--%>
-<%--                                    <div class="row">--%>
-<%--                                        <div class="col-lg-6 col-sm-12 ">--%>
-<%--                                            <input type="text" class="form-control" id="name" placeholder="Name" required="required">--%>
-<%--                                            <div class="row">--%>
-<%--                                                <div class="col-lg-12 col-sm-12 mt-2 mb-2">--%>
-<%--                                                    <input type="text" class="form-control" id="email" placeholder="Email" required="required">--%>
-<%--                                                </div>--%>
-<%--                                                <div class="col-lg-12 col-sm-12">--%>
-<%--                                                    <input type="text" class="form-control mb-sm-2" id="subject" placeholder="Subject">--%>
-<%--                                                </div>--%>
-<%--                                            </div>--%>
-<%--                                        </div>--%>
-<%--                                        <div class="col-lg-6 col-sm-12 mt-2">--%>
-<%--                                            <textarea type="text" class="form-control" placeholder="Body" required="required"--%>
-<%--                                                  style="height: 100%; resize: none"></textarea>--%>
-<%--                                        </div>--%>
-<%--                                    </div>--%>
-<%--                                </div>--%>
-<%--                                <div class="btn btn-secondary rounded-0" type="submit"><i class="fa fa-check-circle"> Submit</i> </div>--%>
-<%--                            </div>--%>
-<%--                        </div>--%>
                     </div>
                 </div>
             </div>
         </div>
+        <div id="myModal" class="modal fade" role="dialog" style="z-index: 99999">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div id="errordiv"></div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button id = "close" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script>
+
+            function verify() {
+                let name = $("#name").val();
+                let email = $("#email").val();
+                let subject = $("#subject").val();
+                let body = $("#body").val();
+                $.ajax({
+                           url: "http://www.localhost:8080/emailTemplate.ajx",
+                           type: "POST",
+                           data: { "name": name, "email": email, "subject": subject, "body": body },
+                           success(data) {
+                               $("#errordiv").html(data)
+                               if ($("#hasErrors").val() === 'true') {
+                                   $("#success").hide()
+                               }
+                               else {
+                                   $("#success").show()
+                                   clear()
+                               }
+                               $("#myModal").modal('show')
+
+                           },
+                           error(error) {
+                               console.log(error)
+                           }
+                       });
+
+            }
+
+            $("#close").click(function () {
+                $("#myModal").modal('hide')
+            })
+
+            function clear(){
+                $("#name").val("");
+                $("#email").val("");
+                $("#subject").val("");
+                $("#body").val("")
+            }
+        </script>
     </jsp:body>
 </t:layout>
 
