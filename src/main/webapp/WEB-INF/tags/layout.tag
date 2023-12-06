@@ -22,12 +22,13 @@
 
 </head>
 <body>
-<div class="container-fluid p-lg-0 p-sm-1 topnav" id="mynav" style="background-color: #ffd03e">
+<div class="container-fluid p-lg-0 p-sm-1 topnav" id="mynav" style="background-color: #c28e0e;">
     <a class="icon pt-2 mb-2" onclick="myFunction()">
         <i class="fa fa-bars"></i>
     </a>
     <div class="row rounded-sm rounded-lg m-lg-0 topnav" id="mynavmenu">
-        <div class="col-lg-4 col-12 text-lg-start text-center pr-2 mb-lg-0">
+        <div class="col-lg-4 col-12 text-lg-start text-center align-self-lg-center pr-2 mb-lg-0">
+            <img src="../../web/static/images/Screenshot%202023-10-27%20151419.jpg" class="img-fluid imgWidth" style="border: unset; !important;">
         </div>
         <div class="col-lg-3 col-12 text-lg-end text-center align-self-center">
             <div class="btn"><a href="/about"><h5> About </h5></a></div>
@@ -38,13 +39,13 @@
         <div class="col-lg-3 col-12 text-center text-lg-start align-self-center lowercol">
             <div class="dropdown btn" data-bs-toggle="dropdown">
                 <h5> Pages</h5>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item" href="/triplexxx">TripleXXX</a></li>
-                    <li><a class="dropdown-item" href="/the_tunnels">Tunnels</a></li>
-                    <li><a class="dropdown-item" href="/slayter_center">Slayter Center</a></li>
-                    <li><a class="dropdown-item" href="/harrys_choclate">Harry's Chocolate Shop</a></li>
-                    <li><a class="dropdown-item" href="/horticulture_garden">H. Garden</a></li>
-                    <li><a class="dropdown-item" href="/ross_stadium">Ross-Ade Stadium</a></li>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="overflow: visible">
+                    <li><a class="dropdown-item btn" onclick=dropdown("${pageContext.request.contextPath}/triplexxx")>TripleXXX</a></li>
+                    <li><a class="dropdown-item btn" onclick=dropdown("${pageContext.request.contextPath}/the_tunnels")>Tunnels</a></li>
+                    <li><a class="dropdown-item btn" onclick=dropdown("${pageContext.request.contextPath}/slayter_center")>Slayter Center</a></li>
+                    <li><a class="dropdown-item btn" onclick=dropdown("${pageContext.request.contextPath}/harrys_choclate")>Harry's Chocolate Shop</a></li>
+                    <li><a class="dropdown-item btn" onclick=dropdown("${pageContext.request.contextPath}/horticulture_garden")>H. Garden</a></li>
+                    <li><a class="dropdown-item btn" onclick=dropdown("${pageContext.request.contextPath}/ross_stadium")>Ross-Ade Stadium</a></li>
 
                 </ul>
             </div>

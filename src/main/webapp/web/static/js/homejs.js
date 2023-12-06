@@ -16,3 +16,7 @@ function myFunction() {
 
     }
 }
+
+function dropdown(link){
+    window.open(link, "_self")
+}
