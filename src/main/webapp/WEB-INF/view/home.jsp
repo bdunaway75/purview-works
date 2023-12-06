@@ -6,13 +6,6 @@
 <%@ taglib tagdir="/WEB-INF/tags" prefix="t" %>
 <t:layout>
     <jsp:body>
-        <div class="col-auto">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb mb-0 mr-2">
-                    <li class="breadcrumb-item">Home</li>
-                </ol>
-            </nav>
-        </div>
         <div class="card shadow">
             <div class="container mt-1">
                 <div class="row m-lg-1 text-center">

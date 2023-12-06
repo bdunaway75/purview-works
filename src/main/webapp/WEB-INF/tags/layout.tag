@@ -10,20 +10,44 @@
     <jsp:invoke fragment="head"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="webjars/bootstrap/5.3.2/js/bootstrap.min.js"></script>
+    <script src="webjars/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
     <link href="webjars/bootstrap/5.3.2/css/bootstrap.min.css"
           rel="stylesheet">
-    <link rel="stylesheet" href="../../web/static/css/homecss.css">
     <link href="webjars/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="../../web/static/css/homecss.css" rel="stylesheet">
 
     <style>
     </style>
 
 </head>
 <body>
-<div class="container justify-content-center d-flex mt-1" style="position:sticky; top: 0; z-index: 9999">
-    <div class="row">
-        <div class="col">
-            <img src="../../web/static/images/img.png" class="img-fluid" style="border-radius: unset;">
+<div class="container-fluid p-lg-0 p-sm-1 topnav" id="mynav" style="background-color: #ffd03e">
+    <a class="icon pt-2 mb-2" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+    <div class="row rounded-sm rounded-lg m-lg-0 topnav" id="mynavmenu">
+        <div class="col-lg-4 col-12 text-lg-start text-center pr-2 mb-lg-0">
+        </div>
+        <div class="col-lg-3 col-12 text-lg-end text-center align-self-center">
+            <div class="btn"><a href="/about"><h5> About </h5></a></div>
+        </div>
+        <div class="col-lg-2 col-12 text-lg-center text-center align-self-center">
+            <div class="btn border-sm-bottom border-lg-0 border-sm-top"><a href="/home"><h5> Home </h5></a></div>
+        </div>
+        <div class="col-lg-3 col-12 text-center text-lg-start align-self-center lowercol">
+            <div class="dropdown btn" data-bs-toggle="dropdown">
+                <h5> Pages</h5>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="/triplexxx">TripleXXX</a></li>
+                    <li><a class="dropdown-item" href="/the_tunnels">Tunnels</a></li>
+                    <li><a class="dropdown-item" href="/slayter_center">Slayter Center</a></li>
+                    <li><a class="dropdown-item" href="/harrys_choclate">Harry's Chocolate Shop</a></li>
+                    <li><a class="dropdown-item" href="/horticulture_garden">H. Garden</a></li>
+                    <li><a class="dropdown-item" href="/ross_stadium">Ross-Ade Stadium</a></li>
+
+                </ul>
+            </div>
         </div>
     </div>
 </div>
