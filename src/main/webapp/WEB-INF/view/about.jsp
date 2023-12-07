@@ -65,7 +65,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="btn btn-secondary rounded-0" onclick="verify()"><i class="fa fa-check-circle"> Submit</i></div>
+                                        <div class="btn btn-secondary rounded-0" onmousedown="verify()"><i class="fa fa-check-circle"> Submit</i></div>
                                     </div>
                                 </div>
                             </div>
