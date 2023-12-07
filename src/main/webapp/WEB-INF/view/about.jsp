@@ -120,7 +120,7 @@
             }
 
             let btn = document.getElementById("button1")
-            btn.addEventListener("click", verify)
+            btn.addEventListener("touchstart", verify)
 
             $("#close").click(function () {
                 $("#myModal").modal('hide')
