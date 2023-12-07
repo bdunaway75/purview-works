@@ -65,7 +65,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="btn btn-secondary rounded-0" onmousedown="verify()"><i class="fa fa-check-circle"> Submit</i></div>
+                                        <button class="btn btn-secondary rounded-0" id="button1"><i class="fa fa-check-circle"> Submit</i></button>
                                     </div>
                                 </div>
                             </div>
@@ -118,6 +118,9 @@
                        });
 
             }
+
+            let btn = document.getElementById("button1")
+            btn.addEventListener("click", verify)
 
             $("#close").click(function () {
                 $("#myModal").modal('hide')
