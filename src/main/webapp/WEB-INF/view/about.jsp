@@ -84,7 +84,7 @@
                     </div>
 
                     <div class="modal-footer">
-                        <button id = "close" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button id="close" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
                 </div>
 
@@ -105,8 +105,7 @@
                                $("#errordiv").html(data)
                                if ($("#hasErrors").val() === 'true') {
                                    $("#success").hide()
-                               }
-                               else {
+                               } else {
                                    $("#success").show()
                                    clear()
                                }
@@ -124,7 +123,7 @@
                 $("#myModal").modal('hide')
             })
 
-            function clear(){
+            function clear() {
                 $("#name").val("");
                 $("#email").val("");
                 $("#subject").val("");
