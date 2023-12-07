@@ -121,6 +121,7 @@
 
             let btn = document.getElementById("button1")
             btn.addEventListener("click", verify)
+            btn.addEventListener("touchend", verify)
 
             $("#close").click(function () {
                 $("#myModal").modal('hide')
