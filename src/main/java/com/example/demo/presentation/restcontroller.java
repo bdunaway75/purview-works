@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
-@CrossOrigin
+@CrossOrigin("http://purviews-de1c3a493321.herokuapp.com")
 public class restcontroller {
     EmailValidator validator = new EmailValidator();
 
