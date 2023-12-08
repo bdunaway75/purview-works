@@ -19,7 +19,7 @@ public class restcontroller {
     @Autowired
     EmailServiceImpl emailService;
 
-    @PostMapping("emailTemplate.ajx")
+    @PostMapping("/emailTemplate.ajx")
     public String emailTemplate(@ModelAttribute(value = "emailTemplate") EmailTemplate emailTemplate,
                                 Errors errors, Model model) {
         validator.validate(emailTemplate, errors);
