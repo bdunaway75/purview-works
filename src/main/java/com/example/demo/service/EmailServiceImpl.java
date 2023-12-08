@@ -18,8 +18,8 @@ public class EmailServiceImpl {
         SimpleMailMessage message = new SimpleMailMessage();
         message.setFrom("noreply@baeldung.com");
         message.setTo(emailTemplate.getEmail());
-        message.setSubject(emailTemplate.getSubject());
-        message.setText(emailTemplate.getBody());
+        message.setSubject("NO REPLY");
+        message.setText("Hi " + emailTemplate.getName()+", Thank you for your response! We would like to inform you that abbie smells today!!");
         emailSender.send(message);
     }
 }
