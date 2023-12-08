@@ -16,7 +16,7 @@ public class WebMVC {
     public CorsConfigurationSource corsConfigurationSource() {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         CorsConfiguration config = new CorsConfiguration();
-        config.setAllowedOrigins(List.of("http://localhost:8080", "http://purviews-de1c3a493321.herokuapp.com"));
+        config.setAllowedOrigins(List.of("http://localhost:8080", "https://purviews-de1c3a493321.herokuapp.com"));
         config.setAllowedMethods(Arrays.asList("GET", "POST", "DELETE", "PUT"));
         config.addAllowedHeader("*");
         config.setAllowCredentials(true);

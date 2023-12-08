@@ -98,7 +98,7 @@
                 let subject = $("#subject").val();
                 let body = $("#body").val();
                 $.ajax({
-                           url: "http://www.localhost:8080/emailTemplate.ajx",
+                           url: "emailTemplate.ajx",
                            type: "POST",
                            data: { "name": name, "email": email, "subject": subject, "body": body },
                            success(data) {
